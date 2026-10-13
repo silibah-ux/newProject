@@ -137,16 +137,28 @@ h1, h2 {
 }
 .pop {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 18px;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
   text-align: center;
   color: var(--paper);
-  text-shadow: 0 3px 0 var(--ink);
   pointer-events: none;
 }
-.pop strong { display: block; font-family: "Jua", sans-serif; font-size: 64px; font-weight: 400; line-height: 0.9; }
-.pop span { font-size: 28px; }
+.pop strong, .pop span, .pop em {
+  background: rgba(27, 20, 15, 0.86);
+  border-radius: 10px;
+  padding: 2px 10px;
+}
+.pop strong {
+  display: block;
+  margin: 4px auto 0;
+  width: fit-content;
+  font-family: "Jua", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 0.95;
+}
+.pop span, .pop em { font-size: 26px; font-style: normal; }
 .hint { color: var(--cream); text-align: center; margin: 0; min-height: 1.4em; }
 
 .film { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; background: var(--ink); padding: 10px 8px; border-radius: 8px; }
