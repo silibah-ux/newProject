@@ -1,0 +1,19 @@
+{
+    "name": "CatJumpShot.EditorTools",
+    "rootNamespace": "CatJumpShot.EditorTools",
+    "references": [
+        "CatJumpShot.Rules",
+        "CatJumpShot.Runtime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

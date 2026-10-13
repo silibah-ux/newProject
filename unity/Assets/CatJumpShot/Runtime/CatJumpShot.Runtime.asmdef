@@ -1,0 +1,16 @@
+{
+    "name": "CatJumpShot.Runtime",
+    "rootNamespace": "CatJumpShot",
+    "references": [
+        "CatJumpShot.Rules"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

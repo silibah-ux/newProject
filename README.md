@@ -23,9 +23,21 @@ npm start
 - 무한 모드: 거실 5스테이지 클리어. 실패 3번. 기록은 성공 컷 수
 - 70ms 미만은 사진으로 남지만 랭킹에는 오르지 않습니다
 
+## Unity
+
+출시 빌드의 뼈대는 `unity/`에 있습니다. Unity 6.3 LTS `6000.3.26f1`로 이 폴더를 엽니다. 화면은 코드로 만들고, 리소스가 오기 전에는 네모 고양이와 단색 배경으로 동작합니다.
+
+```bash
+node tools/sync-stage-table.mjs
+```
+
+스테이지 수치의 기준은 `js/logic.js`입니다. 위 명령이 `unity/Assets/CatJumpShot/Rules/StageTable.cs`를 다시 씁니다. Unity에서 `Cat Jump Shot/Generate Stage Assets`를 실행하면 같은 표로 ScriptableObject 20개를 만듭니다.
+
+iOS 시뮬레이터 빌드는 Mac에서 `tools/build-ios.sh` 한 줄입니다. Unity MCP는 CoplayDev MCP for Unity를 패키지에 넣어 두었고, 연결 예시는 `.cursor/mcp.unity.example.json`입니다. 에디터 안 공식 AI MCP 패키지는 쓰지 않습니다.
+
 ## 기획서와의 차이
 
-출시 목표는 Unity, iOS, Game Center, AdMob, Unity IAP입니다. 여기서는 그 루프를 브라우저에서 먼저 확인합니다.
+출시 목표는 Unity, iOS, Game Center, AdMob 또는 Unity Ads, Unity IAP입니다. 여기서는 그 루프를 브라우저에서 먼저 확인합니다.
 
 - 고양이 이름: 치즈, 콩, 구름, 밤톨. 기획서에서는 미정이었습니다.
 - 랭킹, 광고, 결제는 이 브라우저 안에만 저장되고 실제 스토어와 연결되지 않습니다.
