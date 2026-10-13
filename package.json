@@ -1,0 +1,9 @@
+{
+  "name": "cat-jump-shot",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.mjs",
+    "start": "python3 tools/serve.py --port 8080"
+  }
+}

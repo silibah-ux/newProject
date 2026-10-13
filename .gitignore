@@ -1,0 +1,22 @@
+# Unity generated
+unity/[Ll]ibrary/
+unity/[Tt]emp/
+unity/[Oo]bj/
+unity/[Bb]uild/
+unity/[Bb]uilds/
+unity/[Ll]ogs/
+unity/[Uu]serSettings/
+unity/[Mm]emoryCaptures/
+unity/[Rr]ecordings/
+unity/*.csproj
+unity/*.sln
+unity/.vs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Local .NET test output
+tests/rules/bin/
+tests/rules/obj/
